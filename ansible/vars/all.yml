@@ -1,0 +1,14 @@
+---
+server:
+    install: '1'
+    packages: [nodejs, npm, git, vim]
+    timezone: Europe/Brussels
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: angular.dev, ip: 192.168.33.49, memory: '1024', sharedfolder: ./, syncType: nfs }
+nginx:
+    install: '1'
+    docroot: /vagrant
+    servername: angular.dev
+
